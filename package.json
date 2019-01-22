@@ -2,7 +2,9 @@
   "name": "create-frontend-microservice",
   "version": "0.0.1",
   "description": "Frontend microservice boilerplate code",
-  "main": "index.js",
+  "bin": {
+    "create-frontend-microservice": "./bin/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +14,11 @@
   "homepage": "https://github.com/goldhand/create-frontend-microservice#readme",
   "bugs": {
     "url": "https://github.com/goldhand/create-frontend-microservice/issues"
+  },
+  "dependencies": {
+    "initit": "^1.0.0-2"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
   }
 }
